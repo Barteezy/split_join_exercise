@@ -10,30 +10,43 @@ world_cup_news
 
 # enter your solutions inside the methods
 def goal(message)
+  message + message
 
 end
 
 def generate_an_array_of_teams(teams)
-
+  teams.split(", ")
 end
 
 def number_of_teams(teams)
+  array = teams.split(", ")
+  array.length
 
 end
 
 def return_australia(teams)
+  array = teams.split(", ")
+  array[6]
 
 end
 
 def starts_with_C(teams)
+  new_array = []
+  array = teams.split(", ")
+  array.each do |t|
+    new_array.push(t) if t.include?("C")
 
+  end
+  new_array
 end
 
 def block_string_to_single_line(block_string)
-
+  block_string.split("\n").join(",").split.(",").join(" ").split(" ").join(" ")
 end
 
 def capitalize_every_third_word(block_string)
+  array = []
+  new
 
 end
 
